@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Abstract project</title>
+</head>
+<body>
+	<header>
+		<h1>Abstract | project</h1>
+		<!-- Pipe makes it better. -->
+		<h2>Just another abstract page xD</h2>
+		<!-- Wordpress tribute goes above. -->
+	</header>
+
+	<aside>
+		<nav>
+			<ul>
+				<li>
+					<a href="#about">#about</a>
+				</li>
+				<li>
+					<a href="#faq">#faq</a>
+				</li>
+				<li>
+					<a href="#contacts">#contacts</a>
+				</li>
+				<li>
+					<a href="#register">#register</a>
+				</li>
+			</ul>
+		</nav>
+	</aside>
+	<hr>
+	<section id="content">
+		
+		<article id="about">
+			<h3>About Us</h3>
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem?</p>
+			
+			<p>Possimus quae tempore a dolores ipsa magnam sapiente sunt reprehenderit, recusandae, perspiciatis, molestiae consectetur nam aperiam magni. Sint, vero blanditiis rem pariatur sunt, a quisquam omnis repudiandae, quasi tenetur perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem?</p>
+			
+			<p>Laboriosam in repellendus dolor nisi rem, quos aliquam cumque quaerat repellat expedita nulla asperiores eaque itaque amet debitis quam officiis est, autem deleniti fuga placeat molestiae voluptatibus reprehenderit? Nobis, laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit, est similique quae adipisci harum facere consequatur veritatis dicta molestiae dolores animi ea sequi quibusdam, dolorum vero quidem cupiditate dolorem?</p>
+		</article>
+		<hr>
+		<article id="faq">
+			<!--  
+				This FAQ has been stolen from some-site.com. 
+				My appologizes. 
+				I wiped it from classes and other messy stuff. 
+			-->
+			<h3>FAQ</h3>
+			<dl>
+				<dt>
+					Q. Pre-applying a class of "on" to a DT forces it to show on page load.
+				</dt>
+				<dd>
+					It is recommended to leave the first question open to provide ahint to the user about the functionality presented.
+				</dd><br>
+
+				<dt>
+					Q. Will the code handle more than one sibling DD?
+				</dt>
+				<dd>
+					Apparently it will. <br>There is no limit to the number of sibling DDs that may be
+					hidden.
+				</dd><br>
+
+				<dt>
+					Q. Are multiple DL lists on one page supported?
+				</dt>
+				<dd>
+					Yes. As many as you need. <br>Just add a class of "faq" to the DL if you want to fold its DD content.
+				</dd><br>
+				
+				<dt>
+					Q. Can I add a custom class name to the activating links?
+				</dt>
+				<dd>
+					Yes. Add the parameter linkClass : "customClassName" to the function call. Where customClassName may be any class name you wish.
+					<br>By default no class name is added to the link.
+				</dd><br>
+
+				<dt>
+					Q. What parameters may be user defined?
+				</dt>
+				<dd>
+					The three class names used may be redefined by the user:
+					<ul>
+						<li>
+							faqClass : "faq" - class name of the DLs which require content folding. The
+							default is "faq".
+						</li>
+						<li>
+							onClass : "on" - script applied class to both the DT and DDs to show. The
+							default is "on". It also switches the DT icon state.
+						</li>
+						<li>
+							linkClass : "" - optional class may be added to the DT activating link.
+							Default none.
+						</li>
+					</ul>
+					Call like so:
+					<br />
+					FAQ.init({ faqClass : "faq", onClass : "on", linkClass : "" });
+					<br />
+					To use with just the defaults FAQ.init({}); is enough. Remember if you change the
+					default class names then it needs to be reflected in the HTML and CSS.
+					<br>
+					All aspects of look and feel are maintained by the CSS and hence user
+					defined.
+				</dd><br>
+
+				<dt>
+					Q. What's with the icon graphic and can I use it?
+				</dt>
+				<dd>
+					The arrow graphic used is embedded in the CSS as a dataURI base 64 image with a
+					<a href="arrows.grey.png">back-up PNG for IEv6 &amp; 7</a>.
+					<br>
+					Feel free to use it as you wish.
+				</dd><br>
+
+				<dt>
+					Q. Is there anything else should I consider?
+				</dt>
+				<dd>
+					Ensure the activating link colours used are different to normal links. Helping
+					the user to understand these links are a little different.
+				</dd><br>
+			</dl>
+		</article>
+		<hr>
+		<article id="contacts">
+			<h3>Contacts</h3>
+			<ul>
+				<li>
+					Email us: <a href="mailto:ourmail@gmail.com">ourmail@gmail.com</a>
+				</li>
+				<li>
+					Call us: 093 757 42 32
+				</li>
+				<li>
+					Visit our superb website: <a href="http://superb.web.com">superb.web.com</a>
+				</li>
+			</ul>
+			
+		</article>
+		<hr>
+		<article id="register">
+			<!-- 
+				Sorry!
+				Cause of no-CSS pain I am forced to use breaks everywhere. 
+				Additionally - no align:center, and other deprecated stuff, so it's all about
+				structure, except these BRs. 
+				And there are tonns of them in form below!
+			 -->
+
+			<h3>Register *</h3>
+
+			<form action="/users/register">
+				<label for="reg-name">Pick a username</label><br>
+				<input type="text" name="reg-name" required placeholder="unique please"><br>
+				
+				<br>
+
+				<label for="reg-password">Pick a password</label><br>
+				<input type="password" name="reg-password" required placeholder="long and hard one!"><br>
+
+				<br>
+				
+				<label for="reg-password">Repeat password</label><br>
+				<input type="password" name="reg-password" required placeholder="we care about your memory"><br>
+
+				<br>
+
+				<input type="submit">
+
+				<br><br>
+			</form>
+
+			<small>* All fields <b>required</b></small>
+		</article>
+	</section>
+	<hr>
+	<footer>
+		<nav>
+			<ul>
+				<li>
+					<a href="#about">#about</a>
+				</li>
+				<li>
+					<a href="#faq">#faq</a>
+				</li>
+				<li>
+					<a href="#contacts">#contacts</a>
+				</li>
+				<li>
+					<a href="#register">#register</a>
+				</li>
+				<li>
+					<a href="#content">#top</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<small>
+		&copy; All rights will be stolen - someday. Go contribute to some <a href="http:/www.linktogithubrepos.com">free projects</a>!
+		| <a href="#termsOfService">terms of service</a>
+		| <a href="#whoami">whoami</a>
+		| 2014
+		</small>
+	</footer>
+</body>
+</html>
