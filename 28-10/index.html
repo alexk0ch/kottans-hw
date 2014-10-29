@@ -56,7 +56,7 @@
 				</dt>
 				<dd>
 					It is recommended to leave the first question open to provide ahint to the user about the functionality presented.
-				</dd><br>
+				</dd>
 
 				<dt>
 					Q. Will the code handle more than one sibling DD?
@@ -64,14 +64,14 @@
 				<dd>
 					Apparently it will. <br>There is no limit to the number of sibling DDs that may be
 					hidden.
-				</dd><br>
+				</dd>
 
 				<dt>
 					Q. Are multiple DL lists on one page supported?
 				</dt>
 				<dd>
 					Yes. As many as you need. <br>Just add a class of "faq" to the DL if you want to fold its DD content.
-				</dd><br>
+				</dd>
 				
 				<dt>
 					Q. Can I add a custom class name to the activating links?
@@ -79,7 +79,7 @@
 				<dd>
 					Yes. Add the parameter linkClass : "customClassName" to the function call. Where customClassName may be any class name you wish.
 					<br>By default no class name is added to the link.
-				</dd><br>
+				</dd>
 
 				<dt>
 					Q. What parameters may be user defined?
@@ -109,7 +109,7 @@
 					<br>
 					All aspects of look and feel are maintained by the CSS and hence user
 					defined.
-				</dd><br>
+				</dd>
 
 				<dt>
 					Q. What's with the icon graphic and can I use it?
@@ -119,7 +119,7 @@
 					<a href="arrows.grey.png">back-up PNG for IEv6 &amp; 7</a>.
 					<br>
 					Feel free to use it as you wish.
-				</dd><br>
+				</dd>
 
 				<dt>
 					Q. Is there anything else should I consider?
@@ -127,7 +127,7 @@
 				<dd>
 					Ensure the activating link colours used are different to normal links. Helping
 					the user to understand these links are a little different.
-				</dd><br>
+				</dd>
 			</dl>
 		</article>
 		<hr>
@@ -160,17 +160,17 @@
 
 			<form action="/users/register">
 				<label for="reg-name">Pick a username</label><br>
-				<input type="text" name="reg-name" required placeholder="unique please"><br>
+				<input type="text" name="reg-name" id="reg-name" required placeholder="unique please"><br>
 				
 				<br>
 
 				<label for="reg-password">Pick a password</label><br>
-				<input type="password" name="reg-password" required placeholder="long and hard one!"><br>
+				<input type="password" name="reg-password" id="reg-password" required placeholder="long and hard one!"><br>
 
 				<br>
 				
-				<label for="reg-password">Repeat password</label><br>
-				<input type="password" name="reg-password" required placeholder="we care about your memory"><br>
+				<label for="reg-password-confirm">Repeat password</label><br>
+				<input type="password" name="reg-password-confirm" id="reg-password-confirm" required placeholder="we care about your memory"><br>
 
 				<br>
 
@@ -205,7 +205,7 @@
 		</nav>
 		
 		<small>
-		&copy; All rights will be stolen - someday. Go contribute to some <a href="http:/www.linktogithubrepos.com">free projects</a>!
+		&copy; All rights will be stolen - someday. Go contribute to some <a href="http://www.linktogithubrepos.com">free projects</a>!
 		| <a href="#termsOfService">terms of service</a>
 		| <a href="#whoami">whoami</a>
 		| 2014
