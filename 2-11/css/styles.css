@@ -1,0 +1,92 @@
+/* 
+
+Используя страницу, полученную в результате выполнения задания №1:
+
+Подключите к странице css фаил.
+Измените фон (любой) всей страницы.
+Измените заголовок (любой стиль), увеличьте первую букву каждого параграфа.
+Поменяйте цвет текста всех ссылок: ссылки меню – одного цвета, ссылки на странице – другого.
+Добавьте стили для ссылок при наведении на них.
+Измените цвет фона одного из разделов, на котором есть id, но используя класс и измените в нем размер шрифта.
+Не забудьте добавить в цсс фаил минимальный reset, на ваше усмотрение.
+Используйте псевдо-элементы :before/:after – минимум один раз на странице, на ваше усмотрение.
+
+*/
+
+/*Не забудьте добавить в цсс фаил минимальный reset, на ваше усмотрение.*/
+body, ul, nav {
+	margin: 0; padding: 0;
+}
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+nav>ul {
+	list-style-type: none;
+}
+nav a {
+	text-decoration: none;
+}
+nav>ul>li{
+	display: inline-block;
+	padding: 10px;
+	background-color: white;
+}
+hr {
+	border: 5px solid #FFFFFF;
+}
+
+/*Измените фон (любой) всей страницы.*/
+body {
+	background-color: #F2F2F2;
+	font-family: Calibri, sans-serif;
+}
+/*Измените заголовок (любой стиль)*/
+h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #2D2D2D;
+	text-shadow: 1px 5px 1px #E2E2E2;
+}
+/*увеличьте первую букву каждого параграфа.*/
+p:first-letter {
+	color: red;
+	font-size: 150%;
+	font-weight: bold;
+}
+/*Поменяйте цвет текста всех ссылок: ссылки меню – одного цвета, ссылки на странице – другого.*/
+body a {
+	color: #5E95F0
+}
+nav a {
+	color: #12D66A;
+}
+/*Добавьте стили для ссылок при наведении на них.*/
+a:hover {
+	color: #0EF8F2;
+	text-decoration: none;
+}
+/*Измените цвет фона одного из разделов, на котором есть id, но используя класс и измените в нем размер шрифта.*/
+.highlighted-section {
+	background-color: #F8FEAF;
+	padding: 20px;
+	font-size: 90%;
+}
+/*Используйте псевдо-элементы :before/:after – минимум один раз на странице, на ваше усмотрение.*/
+h1:after {
+	content: 'RAWR, I am a pirate';
+	font-size: 50%;
+	margin-left: 10px;
+}
+h2 {
+	position: relative;
+}
+h2:before {
+	content: '^^';
+	position: absolute;
+	left: -80px;
+	color: white;
+	text-shadow: 0px 0px 30px #C4C4C4;
+	top: -30px;
+	font-size: 250%
+}
