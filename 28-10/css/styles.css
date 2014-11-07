@@ -1,0 +1,79 @@
+body {
+	background: #FFFCE1;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	padding: 0px;
+}
+
+header, section, footer, aside, article {
+	padding: 20px;
+}
+
+h1 {
+	text-transform: capitalize;
+	text-shadow: 0px 0px 1px #CDCEC6;
+}
+
+p:first-letter {
+	font-size: 24px;
+	color: red;
+	font-weight: bold;
+	padding-right: 2px;
+}
+
+nav>ul>li {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+nav>ul>li a {
+	color: green;
+	font-size: 20px;
+	text-shadow: 0px 0px 1px #BEFBBB;
+	text-decoration: none;
+	border-top: 3px solid;
+	border-color: green;
+}
+
+body a {
+	color: #044280
+}
+
+body a:hover {
+	color: #D206BE;
+	text-decoration: none;
+	border-color: #D206BE;
+}
+
+.about-section {
+	background-color: #E3FDDB;
+}
+
+aside {
+	float: right;
+}
+h3 {
+	position: relative;
+	margin-left: 35px;
+}
+h3:before {
+	content: "[!]";
+	font-size: 30px;
+	position: absolute;
+	top: -10px;
+	left: -35px;
+}
+
+footer {
+	text-align: center;
+}
+
+footer:after {
+	content: "Cheers! *";
+	display: block;
+	padding: 30px;
+	text-align: center;
+}
