@@ -1,0 +1,220 @@
+@import "_vars.scss";
+@import "grid.scss";
+
+body {
+	a {
+		text-decoration: none;
+		color: $link-color;
+		&:hover {
+			color: darken($link-color, 35);
+		}
+	}
+	font-family: $font;
+	background-color: $bg;
+	.container {
+		padding: 0px;
+		background-color: $page;
+		width: 960px;
+		@media screen and (max-width: 1000px) {
+	     width: 100%;
+	   }
+		margin: 0 auto;
+		header {
+			nav {
+				font-size: 1.2em;
+				@include menu-ul;
+			}
+		}
+		article {
+			border-top: 3px solid #555555;
+			padding: 10px;
+			background-color: $page;
+			&:after {
+				@include clearfix;
+			}
+			.left {
+				@include left;
+				&.inline-image {
+					padding-right: 10px;
+				}
+			}
+			.right {
+				@include right;
+				&.inline-image {
+					padding-left: 10px;
+				}
+			}
+			h2 {
+				margin: 0px;
+				margin-bottom: 30px;
+				text-transform: uppercase;
+				border-left: 5px solid #6A6A6A;
+				padding-left: 10px;
+			}
+			p {
+				font-size: 100%;
+				&.secondary {
+					font-size: 110%;
+					&:first-letter {
+						font-size: 125%;
+						color: #FC9F23;
+					}
+				}
+				&.lead {
+					font-size: 125%;
+					font-weight: bold;
+					&:first-letter {
+						font-size: 150%;
+						color: red;
+					}
+				}
+			}
+			dl {
+				width: 75%;
+				margin-left: 12.5%;
+				dt {
+					&:before {
+						display: block;
+						width: 16px;
+						height: 16px;
+						background-color: #FE8710;
+						content: '';
+						float: left;
+						margin-top: 7.5px;
+						margin-right: 7.5px;
+					}
+					padding-left: 10px;
+					font-size: 150%;
+					margin-bottom: 10px;
+				}
+				dd {
+					margin-bottom: 20px;
+					font-style: italic;
+					border-left: 2px solid #FE8710;
+					padding-left: 20px;
+					margin-left: 17.5px;
+				}
+			}
+			#map {
+				margin-right: 50px;
+			   @media screen and (max-width: 940px) {
+			 	 	width: 100%;
+			 	 	margin-bottom: 40px;
+			      margin-right:0px;
+		   	}
+			}
+			.contacts {
+				font-size: 150%;
+				
+				list-style-type: none;
+				li {
+					padding-bottom: 20px;
+					i {
+						width: 50px;
+						font-size: 125%;
+						text-align: center;
+						margin-bottom: -5px;
+						padding-right: 10px;
+					}
+				}				
+			}
+			section {
+				&.half {
+					@media screen and (max-width: 470px) {
+				     width: 100%;
+				   }
+					width: 50%;
+					@include left;
+					form {
+						h3 {
+							margin: 0px;
+							@media screen and (max-width: 470px) {
+						     text-align: center;
+						   }
+						}
+						div {
+							padding-top: 10px;
+							padding-right: 10px;
+							@media screen and (max-width: 470px) {
+						     width: 100%;
+						     text-align: center;
+						   }
+						   @media screen and (max-width: 940px) {
+						 	  padding-top: 0px;
+					   	}
+						   p {
+						   	@media screen and (max-width: 940px) {
+							 	  margin: 0px;
+							 	  color: #818181;
+							 	  font-size: 75%;
+						   	}
+						   }
+						}
+						label {
+							font-weight: bold;
+						}
+						input {
+							border:3px solid #4A4A4A;
+							margin-bottom: 5px;
+							&[type="submit"] {
+								width: 80px;
+								margin: 10px 10px;
+								&:hover {
+									background-color: #86F81F;
+								}
+							}
+						}
+					}
+					&.footer-menu {
+						@include menu-ul;
+						ul {
+							@media screen and (max-width: 470px) {
+						     margin-bottom: 20px;
+						   }
+							li {
+								width: 40%;
+								@media screen and (max-width: 470px) {
+							     width: 50%;
+							   }
+								&:nth-child(3) {
+									clear: both;
+								}
+							}
+						}
+					}
+				}
+			}
+			.contact-us {
+				width: 270px;
+				margin: 0 auto;
+				input {
+					border:3px solid #4A4A4A;
+					padding: 5px;
+					display: block;
+					width: 250px;
+					margin: 0 auto;
+					margin-bottom: 5px;
+					&[type="checkbox"] {
+						display: block;
+						width: auto;
+						margin-left: 10px;
+						margin-right: 5px;
+						margin-top: 2.5px;
+						float: left;
+					}
+					&[type="submit"] {
+						width: 100px;
+						margin: 10px auto;
+						&:hover {
+							background-color: #86F81F;
+						}
+					}
+				}
+			}
+			footer {
+				color: #B2B2B2;
+				text-align: center;
+			}
+		}
+	}
+}
