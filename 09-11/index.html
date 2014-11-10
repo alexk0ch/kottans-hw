@@ -9,9 +9,9 @@
 </head>
 <body>
 	<div class="container">
-		<header>
-			<nav>
-				<ul>
+		<div class="row clearfix">
+			<header class="col span-12">
+				<nav><ul>
 					<li>
 						<a href="#home"><i class="fa fa-home"></i>Home</a>
 					</li>
@@ -24,22 +24,24 @@
 					<li>
 						<a href="#touch"><i class="fa fa-smile-o"></i>Stay in touch</a>
 					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<article>
+				</ul></nav>
+			</header>
+		</div>
+	<div class="row clearfix">
+		<article class="col span-12">
 			<h2 id="home">Home</h2>
-			<img class="left inline-image" src="http://placehold.it/200x200" alt="">
+			<img class="left inline-image" src="http://vecto2000.com/wp-content/uploads/2011/02/bg-flower03.jpg" alt="">
 			<p class="lead">Some leading text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, corrupti, atque. Sit, placeat eligendi accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, quis!</p>
 			<p class="secondary">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quaerat repellendus, nemo sapiente, placeat aperiam expedita nam sint cumque excepturi quia recusandae quisquam neque iste eligendi officia consequatur quae dolorem nihil necessitatibus sequi exercitationem quod. Neque deleniti suscipit natus, voluptas?
 			</p>
-			<img class="right inline-image" src="http://placehold.it/200x140" alt="">
+			<img class="right inline-image" src="http://vecto2000.com/wp-content/uploads/2011/02/bg-flower03.jpg" alt="">
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nesciunt quisquam animi rem sit quasi nam laborum perspiciatis, saepe aut nisi, quod fugit nobis. Vel voluptatem aut quisquam sequi soluta. Sed sint laboriosam saepe est expedita iste, labore distinctio quasi necessitatibus assumenda id fugiat deleniti, quia dicta ad impedit sapiente. Architecto blanditiis dolorum possimus. Animi culpa ab ducimus explicabo facilis earum voluptatum atque, amet non. Distinctio vel numquam cum totam, sapiente itaque commodi. Eveniet, consequatur! Assumenda harum laboriosam aliquam unde quia voluptates incidunt alias repellat itaque blanditiis magni ea reprehenderit architecto veritatis, id explicabo impedit labore necessitatibus fugiat iure sed.
 			</p>
 		</article>
+	</div>
+	<div class="row clearfix">
 		<article>
 			<h2 id="faq">FAQ</h2>
 			<dl>
@@ -50,9 +52,17 @@
 				<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum optio id reiciendis, earum, harum omnis sint cum doloremque adipisci natus illum facere beatae, quas rem quia nihil odio veniam consequatur dolore cupiditate est necessitatibus at laudantium. Quisquam nobis labore molestias.</dd>
 			</dl>
 		</article>
-		<article>
+	</div>
+	<div class="row clearfix">
+		<article class="col span-12">
 			<h2 id="contacts">Contacts</h2>
-			<iframe id="map" class="left" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.7303675768644!2d-1.6230322082832738!3d6.68028790803132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xa90bfb74154616bf!2sMaker+Pineapple+Company!5e0!3m2!1sru!2sua!4v1415565141863" width="400" height="300" frameborder="0" style="border:0"></iframe>
+		</article>
+	</div>
+	<div class="row clearfix">
+		<article class="col span-6">	
+			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.7303675768644!2d-1.6230322082832738!3d6.68028790803132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xa90bfb74154616bf!2sMaker+Pineapple+Company!5e0!3m2!1sru!2sua!4v1415565141863" width="400" height="300" frameborder="0" style="border:0"></iframe>
+		</article>
+		<aside class="col span-6">
 			<ul class="contacts">
 				<li>
 					<i class="fa fa-map-marker"></i>Maker Pineapple Company
@@ -64,8 +74,10 @@
 					<i class="fa fa-phone"></i>093 767 47 41
 				</li>
 			</ul>
-		</article>
-		<article>
+		</aside>		
+	</div>
+	<div class="row clearfix">
+		<article class="col span-12">
 			<h2 id="touch">Stay in touch</h2>
 			<form class="contact-us">
 				<input type="text" placeholder="Name">
@@ -77,50 +89,54 @@
 				<input type="submit">
 			</form>
 		</article>
-		<article>
-			<section class="half footer-menu">
-				<nav>
-					<ul>
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">FAQ</a>
-						</li>
-						<li>
-							<a href="#">Contacts</a>
-						</li>
-						<li>
-							<a href="#">Stay in touch</a>
-						</li>
-					</ul>
-				</nav>
-			</section>
-			<section class="half">
-				<form action="">
-					<h3>Let us hear your feedback</h3>
-					<div class="left"><p>How likely will you advise us?</p></div>
-					<div class="left">
-						<label for="star-1">1</label>
-						<input type="radio" name="rate-us" id="star-1">
-						<label for="star-2">2</label>
-						<input type="radio" name="rate-us" id="star-2">
-						<label for="star-3">3</label>
-						<input type="radio" name="rate-us" id="star-3">
-						<label for="star-4">4</label>
-						<input type="radio" name="rate-us" id="star-4">
-						<label for="star-5">5</label>
-						<input type="radio" name="rate-us" id="star-5">
-						<input type="submit" value="Vote">
-					</div>
-				</form>
-			</section>
+	</div>
+	<div class="row clearfix">
+		<article class="col span-6 footer-nav">
+			<nav>
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">FAQ</a>
+					</li>
+					<li>
+						<a href="#">Contacts</a>
+					</li>
+					<li>
+						<a href="#">Stay in touch</a>
+					</li>
+				</ul>
+			</nav>
 		</article>
+		<article class="col span-6">
+			<form class="feedback">
+				<h3>Let us hear your feedback</h3>
+				<div><p>How likely will you advise us?</p></div>
+				<div>
+					<label for="star-1">1</label>
+					<input type="radio" name="rate-us" id="star-1">
+					<label for="star-2">2</label>
+					<input type="radio" name="rate-us" id="star-2">
+					<label for="star-3">3</label>
+					<input type="radio" name="rate-us" id="star-3">
+					<label for="star-4">4</label>
+					<input type="radio" name="rate-us" id="star-4">
+					<label for="star-5">5</label>
+					<input type="radio" name="rate-us" id="star-5">
+					<input type="submit" value="Vote">
+				</div>
+			</form>
+		</article>
+		
+	</div>
+	<div class="row clearfix">
 		<article>
 			<footer>
 				<p>2014 &copy; as.kochetov@gmail.com</p>
 			</footer>
 		</article>
+	</div>
 	</div>
 </body>
 </html>

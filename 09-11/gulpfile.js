@@ -6,9 +6,7 @@ var concat = require('gulp-concat');
 var autoprefix = require('gulp-autoprefixer');
 
 gulp.task('scss', function () {
-	gulp.src([
-					'./scss/main.scss'
-				])
+	gulp.src(['./scss/main.scss'])
 		.pipe( plumber() )
 		.pipe( sass({
 			sourceComments: 'normal',

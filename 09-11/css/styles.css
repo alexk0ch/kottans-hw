@@ -1,10 +1,34 @@
+/* line 4, D:/kottans-hw/09-11/scss/includes/_vars.scss */
+body {
+  background: url(http://vecto2000.com/wp-content/uploads/2011/02/bg-flower03.jpg); }
+
+/* line 8, D:/kottans-hw/09-11/scss/includes/_vars.scss */
+.container {
+  background-color: #FFF; }
+
+/* line 1, D:/kottans-hw/09-11/scss/includes/_helpers.scss */
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+/* line 9, D:/kottans-hw/09-11/scss/includes/_helpers.scss */
+.left {
+  float: left; }
+
+/* line 13, D:/kottans-hw/09-11/scss/includes/_helpers.scss */
+.right {
+  float: right; }
+
 /**
  * Gridpak Beta SCSS 
  *
  * Generator - http://gridpak.com/
  * Created by @erskinedesign
  */
-/* line 19, D:/Page/scss/grid.scss */
+/* line 19, D:/kottans-hw/09-11/scss/includes/_grid.scss */
 .col {
   border: 0px solid rgba(0, 0, 0, 0);
   float: left;
@@ -12,381 +36,304 @@
   background-clip: padding-box !important; }
 
 @media screen and (min-width: 0px) {
-  /* line 37, D:/Page/scss/grid.scss */
+  /* line 36, D:/kottans-hw/09-11/scss/includes/_grid.scss */
   .col {
     margin-left: 0.5%;
     padding: 0 0.5%; }
-  /* line 47, D:/Page/scss/grid.scss */
+  /* line 46, D:/kottans-hw/09-11/scss/includes/_grid.scss */
   .row .col:first-child {
     margin-left: 0; }
-  /* line 51, D:/Page/scss/grid.scss */
-  .span_1 {
+  /* line 50, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-1 {
     width: 7.875%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 54, D:/Page/scss/grid.scss */
-  .span_2 {
+  /* line 53, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-2 {
     width: 16.25%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 57, D:/Page/scss/grid.scss */
-  .span_3 {
+  /* line 56, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-3 {
     width: 24.625%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 60, D:/Page/scss/grid.scss */
-  .span_4 {
+  /* line 59, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-4 {
     width: 33%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 63, D:/Page/scss/grid.scss */
-  .span_5 {
+  /* line 62, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-5 {
     width: 41.375%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 66, D:/Page/scss/grid.scss */
-  .span_6 {
+  /* line 65, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-6 {
     width: 49.75%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 69, D:/Page/scss/grid.scss */
-  .span_7 {
+  /* line 68, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-7 {
     width: 58.125%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 72, D:/Page/scss/grid.scss */
-  .span_8 {
+  /* line 71, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-8 {
     width: 66.5%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 75, D:/Page/scss/grid.scss */
-  .span_9 {
+  /* line 74, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-9 {
     width: 74.875%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 78, D:/Page/scss/grid.scss */
-  .span_10 {
+  /* line 77, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-10 {
     width: 83.25%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 81, D:/Page/scss/grid.scss */
-  .span_11 {
+  /* line 80, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-11 {
     width: 91.625%;
     border-left-width: 0;
     padding: 0 0.5%;
     margin-left: 0.5%; }
-  /* line 84, D:/Page/scss/grid.scss */
-  .span_12 {
+  /* line 83, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .span-12 {
     margin-left: 0;
     width: 100%; } }
 
-/* line 4, D:/Page/scss/main.scss */
+@media screen and (min-width: 1000px) {
+  /* line 90, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .container {
+    width: 1000px;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 800px) {
+  /* line 98, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .col.span-6 {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px; }
+  /* line 103, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  #map {
+    width: 100%; }
+  /* line 109, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  .footer-nav nav ul {
+    margin-left: 0px !important; }
+    /* line 111, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+    .footer-nav nav ul li {
+      width: 50% !important; } }
+
+@media screen and (max-width: 600px) {
+  /* line 120, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  nav ul li a {
+    font-size: 80% !important; } }
+
+@media screen and (max-width: 500px) {
+  /* line 126, D:/kottans-hw/09-11/scss/includes/_grid.scss */
+  nav ul li {
+    width: 100% !important; } }
+
+/* line 1, D:/kottans-hw/09-11/scss/includes/_text.scss */
 body {
-  font-family: 'Calibri';
-  background-color: #EFEFEF; }
-  /* line 5, D:/Page/scss/main.scss */
-  body a {
-    text-decoration: none;
-    color: #057C79; }
-    /* line 8, D:/Page/scss/main.scss */
-    body a:hover {
-      color: black; }
-  /* line 14, D:/Page/scss/main.scss */
-  body .container {
-    padding: 0px;
-    background-color: #fff;
-    width: 960px;
-    margin: 0 auto; }
-    @media screen and (max-width: 1000px) {
-      body .container {
-        width: 100%; } }
-    /* line 23, D:/Page/scss/main.scss */
-    body .container header nav {
-      font-size: 1.2em; }
-      /* line 16, D:/Page/scss/_vars.scss */
-      body .container header nav ul {
-        list-style-type: none;
-        margin: 0px;
-        padding-left: 0px; }
-        /* line 20, D:/Page/scss/_vars.scss */
-        body .container header nav ul:after {
-          content: " ";
-          visibility: hidden;
-          display: block;
-          height: 0;
-          clear: both; }
-        /* line 23, D:/Page/scss/_vars.scss */
-        body .container header nav ul li {
-          display: block;
-          text-align: center;
-          float: left;
-          box-sizing: border-box;
-          width: 25%; }
-          @media screen and (max-width: 610px) {
-            body .container header nav ul li {
-              font-size: 70%; } }
-          @media screen and (max-width: 470px) {
-            body .container header nav ul li {
-              width: 100%; } }
-          /* line 35, D:/Page/scss/_vars.scss */
-          body .container header nav ul li:nth-child(1) {
-            background-color: #FFB3B3; }
-          /* line 38, D:/Page/scss/_vars.scss */
-          body .container header nav ul li:nth-child(2) {
-            background-color: #FFFDB3; }
-          /* line 41, D:/Page/scss/_vars.scss */
-          body .container header nav ul li:nth-child(3) {
-            background-color: #CFFFB3; }
-          /* line 44, D:/Page/scss/_vars.scss */
-          body .container header nav ul li:nth-child(4) {
-            background-color: #B3EAFF; }
-          /* line 47, D:/Page/scss/_vars.scss */
-          body .container header nav ul li i {
-            padding-right: 10px; }
-          /* line 50, D:/Page/scss/_vars.scss */
-          body .container header nav ul li a {
-            box-sizing: border-box;
-            display: block;
-            padding: 10px;
-            width: 100%;
-            height: 100%; }
-    /* line 28, D:/Page/scss/main.scss */
-    body .container article {
-      border-top: 3px solid #555555;
-      padding: 10px;
-      background-color: #fff; }
-      /* line 32, D:/Page/scss/main.scss */
-      body .container article:after {
-        content: " ";
-        visibility: hidden;
-        display: block;
-        height: 0;
-        clear: both; }
-      /* line 35, D:/Page/scss/main.scss */
-      body .container article .left {
-        float: left; }
-        /* line 37, D:/Page/scss/main.scss */
-        body .container article .left.inline-image {
-          padding-right: 10px; }
-      /* line 41, D:/Page/scss/main.scss */
-      body .container article .right {
-        float: right; }
-        /* line 43, D:/Page/scss/main.scss */
-        body .container article .right.inline-image {
-          padding-left: 10px; }
-      /* line 47, D:/Page/scss/main.scss */
-      body .container article h2 {
-        margin: 0px;
-        margin-bottom: 30px;
-        text-transform: uppercase;
-        border-left: 5px solid #6A6A6A;
-        padding-left: 10px; }
-      /* line 54, D:/Page/scss/main.scss */
-      body .container article p {
-        font-size: 100%; }
-        /* line 56, D:/Page/scss/main.scss */
-        body .container article p.secondary {
-          font-size: 110%; }
-          /* line 58, D:/Page/scss/main.scss */
-          body .container article p.secondary:first-letter {
-            font-size: 125%;
-            color: #FC9F23; }
-        /* line 63, D:/Page/scss/main.scss */
-        body .container article p.lead {
-          font-size: 125%;
-          font-weight: bold; }
-          /* line 66, D:/Page/scss/main.scss */
-          body .container article p.lead:first-letter {
-            font-size: 150%;
-            color: red; }
-      /* line 72, D:/Page/scss/main.scss */
-      body .container article dl {
-        width: 75%;
-        margin-left: 12.5%; }
-        /* line 75, D:/Page/scss/main.scss */
-        body .container article dl dt {
-          padding-left: 10px;
-          font-size: 150%;
-          margin-bottom: 10px; }
-          /* line 76, D:/Page/scss/main.scss */
-          body .container article dl dt:before {
-            display: block;
-            width: 16px;
-            height: 16px;
-            background-color: #FE8710;
-            content: '';
-            float: left;
-            margin-top: 7.5px;
-            margin-right: 7.5px; }
-        /* line 90, D:/Page/scss/main.scss */
-        body .container article dl dd {
-          margin-bottom: 20px;
-          font-style: italic;
-          border-left: 2px solid #FE8710;
-          padding-left: 20px;
-          margin-left: 17.5px; }
-      /* line 98, D:/Page/scss/main.scss */
-      body .container article #map {
-        margin-right: 50px; }
-        @media screen and (max-width: 940px) {
-          body .container article #map {
-            width: 100%;
-            margin-bottom: 40px;
-            margin-right: 0px; } }
-      /* line 106, D:/Page/scss/main.scss */
-      body .container article .contacts {
-        font-size: 150%;
-        list-style-type: none; }
-        /* line 110, D:/Page/scss/main.scss */
-        body .container article .contacts li {
-          padding-bottom: 20px; }
-          /* line 112, D:/Page/scss/main.scss */
-          body .container article .contacts li i {
-            width: 50px;
-            font-size: 125%;
-            text-align: center;
-            margin-bottom: -5px;
-            padding-right: 10px; }
-      /* line 122, D:/Page/scss/main.scss */
-      body .container article section.half {
-        width: 50%;
-        float: left; }
-        @media screen and (max-width: 470px) {
-          body .container article section.half {
-            width: 100%; } }
-        /* line 129, D:/Page/scss/main.scss */
-        body .container article section.half form h3 {
-          margin: 0px; }
-          @media screen and (max-width: 470px) {
-            body .container article section.half form h3 {
-              text-align: center; } }
-        /* line 135, D:/Page/scss/main.scss */
-        body .container article section.half form div {
-          padding-top: 10px;
-          padding-right: 10px; }
-          @media screen and (max-width: 470px) {
-            body .container article section.half form div {
-              width: 100%;
-              text-align: center; } }
-          @media screen and (max-width: 940px) {
-            body .container article section.half form div {
-              padding-top: 0px; } }
-          @media screen and (max-width: 940px) {
-            body .container article section.half form div p {
-              margin: 0px;
-              color: #818181;
-              font-size: 75%; } }
-        /* line 153, D:/Page/scss/main.scss */
-        body .container article section.half form label {
-          font-weight: bold; }
-        /* line 156, D:/Page/scss/main.scss */
-        body .container article section.half form input {
-          border: 3px solid #4A4A4A;
-          margin-bottom: 5px; }
-          /* line 159, D:/Page/scss/main.scss */
-          body .container article section.half form input[type="submit"] {
-            width: 80px;
-            margin: 10px 10px; }
-            /* line 162, D:/Page/scss/main.scss */
-            body .container article section.half form input[type="submit"]:hover {
-              background-color: #86F81F; }
-        /* line 16, D:/Page/scss/_vars.scss */
-        body .container article section.half.footer-menu ul {
-          list-style-type: none;
-          margin: 0px;
-          padding-left: 0px; }
-          /* line 20, D:/Page/scss/_vars.scss */
-          body .container article section.half.footer-menu ul:after {
-            content: " ";
-            visibility: hidden;
-            display: block;
-            height: 0;
-            clear: both; }
-          /* line 23, D:/Page/scss/_vars.scss */
-          body .container article section.half.footer-menu ul li {
-            display: block;
-            text-align: center;
-            float: left;
-            box-sizing: border-box;
-            width: 25%; }
-            @media screen and (max-width: 610px) {
-              body .container article section.half.footer-menu ul li {
-                font-size: 70%; } }
-            @media screen and (max-width: 470px) {
-              body .container article section.half.footer-menu ul li {
-                width: 100%; } }
-            /* line 35, D:/Page/scss/_vars.scss */
-            body .container article section.half.footer-menu ul li:nth-child(1) {
-              background-color: #FFB3B3; }
-            /* line 38, D:/Page/scss/_vars.scss */
-            body .container article section.half.footer-menu ul li:nth-child(2) {
-              background-color: #FFFDB3; }
-            /* line 41, D:/Page/scss/_vars.scss */
-            body .container article section.half.footer-menu ul li:nth-child(3) {
-              background-color: #CFFFB3; }
-            /* line 44, D:/Page/scss/_vars.scss */
-            body .container article section.half.footer-menu ul li:nth-child(4) {
-              background-color: #B3EAFF; }
-            /* line 47, D:/Page/scss/_vars.scss */
-            body .container article section.half.footer-menu ul li i {
-              padding-right: 10px; }
-            /* line 50, D:/Page/scss/_vars.scss */
-            body .container article section.half.footer-menu ul li a {
-              box-sizing: border-box;
-              display: block;
-              padding: 10px;
-              width: 100%;
-              height: 100%; }
-        @media screen and (max-width: 470px) {
-          body .container article section.half.footer-menu ul {
-            margin-bottom: 20px; } }
-        /* line 174, D:/Page/scss/main.scss */
-        body .container article section.half.footer-menu ul li {
-          width: 40%; }
-          @media screen and (max-width: 470px) {
-            body .container article section.half.footer-menu ul li {
-              width: 50%; } }
-          /* line 179, D:/Page/scss/main.scss */
-          body .container article section.half.footer-menu ul li:nth-child(3) {
-            clear: both; }
-      /* line 187, D:/Page/scss/main.scss */
-      body .container article .contact-us {
-        width: 270px;
-        margin: 0 auto; }
-        /* line 190, D:/Page/scss/main.scss */
-        body .container article .contact-us input {
-          border: 3px solid #4A4A4A;
-          padding: 5px;
-          display: block;
-          width: 250px;
-          margin: 0 auto;
-          margin-bottom: 5px; }
-          /* line 197, D:/Page/scss/main.scss */
-          body .container article .contact-us input[type="checkbox"] {
-            display: block;
-            width: auto;
-            margin-left: 10px;
-            margin-right: 5px;
-            margin-top: 2.5px;
-            float: left; }
-          /* line 205, D:/Page/scss/main.scss */
-          body .container article .contact-us input[type="submit"] {
-            width: 100px;
-            margin: 10px auto; }
-            /* line 208, D:/Page/scss/main.scss */
-            body .container article .contact-us input[type="submit"]:hover {
-              background-color: #86F81F; }
-      /* line 214, D:/Page/scss/main.scss */
-      body .container article footer {
-        color: #B2B2B2;
-        text-align: center; }
+  font-family: Calibri; }
+  /* line 3, D:/kottans-hw/09-11/scss/includes/_text.scss */
+  body h2 {
+    font-size: 24px;
+    border-left: 3px solid #4AB909;
+    padding-left: 10px;
+    color: #245804; }
+  /* line 9, D:/kottans-hw/09-11/scss/includes/_text.scss */
+  body p {
+    line-height: 1.1; }
+    /* line 11, D:/kottans-hw/09-11/scss/includes/_text.scss */
+    body p.lead {
+      font-size: 125%; }
+    /* line 14, D:/kottans-hw/09-11/scss/includes/_text.scss */
+    body p.secondary {
+      font-size: 110%; }
+
+/* line 1, D:/kottans-hw/09-11/scss/includes/_links.scss */
+a {
+  color: #056FAD;
+  text-decoration: none; }
+  /* line 4, D:/kottans-hw/09-11/scss/includes/_links.scss */
+  a:hover {
+    color: #012031; }
+
+/* line 2, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+img.inline-image.left {
+  padding-right: 10px;
+  border-left: 3px solid #245804; }
+/* line 6, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+img.inline-image.right {
+  padding-left: 10px;
+  border-right: 3px solid #245804; }
+
+/* line 12, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+dl {
+  width: 75%;
+  margin: 0 auto; }
+  /* line 15, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+  dl dt {
+    font-size: 125%;
+    font-weight: bold;
+    color: #245804; }
+    /* line 19, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+    dl dt:before {
+      content: '?';
+      display: block;
+      float: left;
+      padding-right: 10px;
+      margin-top: -7.5px;
+      font-size: 30px;
+      color: #388807; }
+  /* line 29, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+  dl dd {
+    font-style: italic;
+    margin-bottom: 20px;
+    border-left: 3px solid #388807;
+    padding-left: 30px;
+    margin-left: 5px; }
+
+/* line 38, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+ul.contacts {
+  list-style-type: none;
+  height: 200px;
+  margin-top: 75px; }
+  /* line 42, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+  ul.contacts li {
+    box-sizing: border-box;
+    padding: 10px 0px;
+    font-size: 125%; }
+    /* line 46, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+    ul.contacts li i {
+      padding-right: 10px;
+      width: 50px;
+      text-align: center;
+      font-size: 150%; }
+
+/* line 55, D:/kottans-hw/09-11/scss/includes/_blocks.scss */
+footer {
+  opacity: 0.5;
+  text-align: center;
+  padding: 10px; }
+
+/* line 2, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+nav ul {
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0; }
+  /* line 6, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+  nav ul li {
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 10px 0px; }
+    /* line 13, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+    nav ul li:nth-child(1) {
+      background-color: #4AB909; }
+    /* line 16, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+    nav ul li:nth-child(2) {
+      background-color: #69b909; }
+    /* line 19, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+    nav ul li:nth-child(3) {
+      background-color: #9bb909; }
+    /* line 22, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+    nav ul li:nth-child(4) {
+      background-color: #cdb909; }
+    /* line 25, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+    nav ul li a {
+      display: block;
+      height: 100%;
+      color: white;
+      font-size: 20px;
+      font-weight: bold; }
+      /* line 31, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+      nav ul li a i {
+        padding-right: 10px; }
+
+/* line 40, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+.footer-nav nav ul {
+  margin-left: 15%; }
+/* line 43, D:/kottans-hw/09-11/scss/includes/_navs.scss */
+.footer-nav nav ul li {
+  width: 35%; }
+
+/* line 1, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+form.contact-us {
+  width: 300px;
+  margin: 15px auto; }
+  /* line 4, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+  form.contact-us input {
+    width: 290px;
+    padding: 5px;
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid rgba(74, 185, 9, 0.3);
+    background-color: rgba(74, 185, 9, 0.3); }
+    /* line 11, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+    form.contact-us input::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+    form.contact-us input::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+    form.contact-us input:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+    form.contact-us input::placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+    /* line 14, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+    form.contact-us input[type="checkbox"] {
+      width: 20px;
+      margin-left: 5px;
+      margin-top: 3px;
+      float: left; }
+    /* line 20, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+    form.contact-us input[type="submit"] {
+      width: 100px;
+      margin: 20px auto; }
+  /* line 25, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+  form.contact-us label {
+    margin-left: 50px;
+    display: block;
+    float: left; }
+
+/* line 33, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+form.feedback h3 {
+  margin: 0px; }
+/* line 36, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+form.feedback p {
+  margin-top: 0px;
+  color: #000;
+  opacity: 0.5; }
+/* line 41, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+form.feedback input[type="submit"] {
+  margin-left: 20px; }
+/* line 44, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+form.feedback label {
+  margin-left: 5px;
+  font-weight: bold; }
+
+/* line 50, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+input[type="submit"] {
+  width: 100px;
+  margin: 0 auto;
+  border: 1px solid rgba(74, 185, 9, 0.3);
+  background-color: rgba(74, 185, 9, 0.3); }
+  /* line 55, D:/kottans-hw/09-11/scss/includes/_forms.scss */
+  input[type="submit"]:hover {
+    font-weight: bold;
+    background-color: #4AB909; }
