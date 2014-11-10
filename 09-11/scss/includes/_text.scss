@@ -1,0 +1,18 @@
+body {
+	font-family: Calibri;
+	h2 {
+		font-size: 24px;
+		border-left: 3px solid $accent;
+		padding-left: 10px;
+		color: darken($accent, 20);
+	}
+	p {
+		line-height: 1.1;
+		&.lead {
+			font-size: 125%;
+		}
+		&.secondary {
+			font-size: 110%;
+		}
+	}
+}

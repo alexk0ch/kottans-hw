@@ -1,0 +1,59 @@
+form.contact-us {
+	width: 300px;
+	margin: 15px auto;
+	input {
+		width: 290px;
+		padding: 5px;
+		display: block;
+		margin-bottom: 5px;
+		border: 1px solid transparentize($accent, 0.7);
+		background-color: transparentize($accent, 0.7);
+		&::placeholder {
+			color: transparentize(#000, 0.5);
+		}
+		&[type="checkbox"] {
+			width: 20px;
+			margin-left: 5px;
+			margin-top: 3px;
+			float: left;
+		}
+		&[type="submit"] {
+			width: 100px;
+			margin: 20px auto;
+		}
+	}
+	label {
+		margin-left: 50px;
+		display: block;
+		float: left;
+	}
+}
+
+form.feedback {
+	h3 {
+		margin: 0px;
+	}
+	p {
+		margin-top: 0px;
+		color: #000;
+		opacity: 0.5;
+	}
+	input[type="submit"] {
+		margin-left: 20px;
+	}
+	label {
+		margin-left: 5px;
+		font-weight: bold;
+	}
+}
+
+input[type="submit"] {
+	width: 100px;
+	margin: 0 auto;
+	border: 1px solid transparentize($accent, 0.7);
+	background-color: transparentize($accent, 0.7);
+	&:hover {
+		font-weight: bold;
+		background-color: $accent;
+	}
+}

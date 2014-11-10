@@ -1,0 +1,129 @@
+/**
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+
+@mixin col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+.col {
+   @include col;
+}
+
+@mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
+    $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
+    width:($one_col * $num) + ($gutter_pc * ($num - 1));
+    border-left-width:$gutter_px;
+    padding:$padding;
+    margin-left:$gutter_pc;
+}
+
+@mixin span-first {
+    margin-left:0;
+}
+
+	@media screen and (min-width: 0px) {
+        .col {
+            margin-left:0.5%;
+            padding:0 0.5%;
+        }
+
+        $max_columns: 12;
+        $padding: 0 0.5%;
+        $gutter_px: 0;
+        $gutter_pc: 0.5%;
+
+        .row .col:first-child {
+            @include span-first;
+        }
+        
+        .span-1 {
+            @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-2 {
+            @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-3 {
+            @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-4 {
+            @include span(4, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-5 {
+            @include span(5, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-6 {
+            @include span(6, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-7 {
+            @include span(7, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-8 {
+            @include span(8, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-9 {
+            @include span(9, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-10 {
+            @include span(10, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-11 {
+            @include span(11, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span-12 {
+            @include span-first;
+            width:100%;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .container {
+           width: 1000px;
+           margin: 0 auto;
+        }
+
+    }
+
+    @media screen and (max-width: 800px) {
+          .col.span-6 {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+          }
+          #map {
+            width: 100%;
+          }
+          
+          .footer-nav {
+            nav {
+                ul {
+                    margin-left: 0px!important;
+                    li {
+                        width: 50%!important;
+                    }
+                }
+            }
+          }
+    }
+
+    @media screen and (max-width: 600px) {
+        nav ul li a {
+            font-size: 80%!important;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        nav ul li{
+            width: 100%!important;
+        }
+    }
