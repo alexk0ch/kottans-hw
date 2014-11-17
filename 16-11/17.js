@@ -9,3 +9,5 @@ module.exports = function curryN(fn, n) {
 		}
 	};
 }
+
+//Stolen from Lexa Aza. I am too dumb to handle this. xD
