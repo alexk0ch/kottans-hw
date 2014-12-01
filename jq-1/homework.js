@@ -43,10 +43,10 @@ function MyQueryWrapper () {
 
 		if (args.length === 3) {
 			_this[args[0]] 
-			? setTimeout(function () {
-				_this[args[0]](args[1]);
-			}, args[2])
-			: 'No Method'
+				? setTimeout(function () {
+					_this[args[0]](args[1]);
+				}, args[2])
+				: 'No Method'
 		}
 
 		return _this
