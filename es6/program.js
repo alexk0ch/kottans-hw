@@ -28,11 +28,11 @@ console.log(html`<b>${process.argv[2]} says</b>: "${process.argv[3]}"`)
 
 function html(str, ...vals) {
 	var input = ['\'', '"', '<', '>', '&'],
-		encoded = ["&#39;", "&quot;", "&lt;", "&gt;", "&amp;"],
-		re = new RegExp(input.join('|'), 'g'),
-		howToReplace = (matched) => encoded[input.indexOf(matched)],
-		vals = vals.map( (val) => val.replace(re, howToReplace) ),
-		res = [];
+	encoded = ["&#39;", "&quot;", "&lt;", "&gt;", "&amp;"],
+	re = new RegExp(input.join('|'), 'g'),
+	howToReplace = (matched) => encoded[input.indexOf(matched)],
+	vals = vals.map( (val) => val.replace(re, howToReplace) ),
+	res = [];
 
 	for (var i = 0, len = vals.length; i<len; i++) 
 		res.push(str[i], vals[i]);
